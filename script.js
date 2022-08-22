@@ -19,3 +19,11 @@ btns.forEach((b) => b.addEventListener("click", selectBtns));
 function selectBtns() {
   this.classList.toggle("select");
 }
+
+let burgerCatalog = document.querySelector(".burger-catalog");
+let burgerCatalogList = document.querySelector(".burger-sub-catalog__list");
+
+burgerCatalog.addEventListener("click", function (e) {
+  e.preventDefault();
+  burgerCatalogList.classList.toggle("show");
+});
